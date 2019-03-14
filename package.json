@@ -4,6 +4,7 @@
   "description": "适用于微信小游戏的pixi.js重新打包",
   "main": "index.js",
   "scripts": {
+    "build": "npm install --save --production pixi.js && copy-files-from-to --config copy-file.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,10 +15,21 @@
     "微信小游戏",
     "pixi.js"
   ],
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md"
+  ],
   "author": "xmean",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/xmean/weapp-pixi-pixi.js/issues"
   },
-  "homepage": "https://github.com/xmean/weapp-pixi-pixi.js#readme"
+  "homepage": "https://github.com/xmean/weapp-pixi-pixi.js#readme",
+  "dependencies": {
+    "pixi.js": "^5.0.0-rc.2"
+  },
+  "devDependencies": {
+    "copy-files-from-to": "^1.1.0"
+  }
 }

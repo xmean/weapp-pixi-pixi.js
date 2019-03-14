@@ -1,0 +1,15 @@
+{
+  "copyFiles": [
+      {
+        "from": "node_modules/pixi.js/dist/pixi.min.js",
+        "to": "dist/pixi.min.js"
+      },
+      {
+        "from": "node_modules/pixi.js/dist/pixi.min.js.map",
+        "to": "dist/pixi.min.js.map"
+      }
+  ],
+  "settings": {
+    "whenFileExists": "overwrite"
+}
+}
